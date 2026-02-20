@@ -4,7 +4,7 @@
 
 This work is devoted to a method of automatic machine translation of texts into glosses (translations of signs into words and phrases of a verbal language). As part of the method, a parallel corpus of Russian-language sentences was compiled and manually annotated [link](corpora/sentences_translations.csv). For annotation, a portion of the Russian Sign Language corpus Slovo [Kaggle](https://www.kaggle.com/datasets/kapitanov/slovo), specifically the file annotations.csv [link](corpora/annotations_slovo.csv), made publicly available, was used. This parallel corpus was employed to train transformer models and large language models in accordance with the proposed method. The functional diagram of the method is presented below:
 
-<img width="1092" height="772" alt="Functional method text-to-gloss EN drawio (1)" src="https://github.com/user-attachments/assets/24c49270-6f5b-44c6-979b-1c384a432bd3" />
+<img width="1092" height="772" alt="Functional method text-to-gloss EN drawio (1)" src="https://github.com/user-attachments/assets/471e0272-00a1-49c6-a98e-77f6614e896a" />
 
 ## LLM text-to-gloss translation comparison (BLEU)
 
