@@ -6,7 +6,7 @@
 Данный параллельный корпус использовался для обучения моделей трансформеров и больших языковых моделей, согласно предлагаемому методу.
 Схема функционального метода расположена ниже:
 
-<img width="1091" height="762" alt="Functional method text-to-gloss drawio (2)" src="https://github.com/user-attachments/assets/ea4f22c9-5880-48f1-89f0-59768d1873c1" />
+<img width="1091" height="762" alt="Functional method text-to-gloss drawio (2)" src="https://github.com/user-attachments/assets/3b24b4a9-32ad-4b6e-8af4-7bc6b0eb3c32" />
 
 Результаты экспериментов и метрика оценка качества машинного перевода (BLEU score) представлены в таблицах ниже:
 
