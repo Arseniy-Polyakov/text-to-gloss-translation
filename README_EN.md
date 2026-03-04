@@ -6,11 +6,7 @@ This work is devoted to a method of automatic machine translation of texts into 
 
 <img width="1092" height="772" alt="Pipeline of the proposed method" src="https://github.com/user-attachments/assets/743dfe0d-0b6e-4ebc-b5ea-4b30fc313ed8"/>
 
-<<<<<<< HEAD
-## LLM text-to-gloss translation comparison (BLEU, evaluate hugging face)
-=======
-## Experimental results for ``spoken-language text-gloss sequence`` translation task using LLMs
->>>>>>> ac6be3e686da96376e416397312350151b7d1f38
+## Experimental results for ``spoken-language text-gloss sequence`` translation task using LLMs (BLEU, evaluate hugging face)
 
 | Rank | Model                                  | Tokens | BLEU     |
 |------|----------------------------------------|--------|----------|
@@ -30,8 +26,7 @@ This work is devoted to a method of automatic machine translation of texts into 
 | 14   | deepseek-ai/DeepSeek-V3-0324           | 20 582 | 0.39     |
 | 15   | openai/gpt-5.2                         | 27 238 | **0.60** |
 
-<<<<<<< HEAD
-## LLM text-to-gloss translation comparison (BLEU, NLTK N-grams)
+## Experimental results for ``spoken-language text-gloss sequence`` translation task using LLMs (BLEU, NLTK N-grams)
 
 | Rank | Model                              | BLEU-1 | BLEU-2 | BLEU-3 | BLEU-4 |
 |-------|--------------------------------------|--------|--------|--------|--------|
@@ -51,10 +46,7 @@ This work is devoted to a method of automatic machine translation of texts into 
 | 14    | DeepSeek-V3-0324                | 0.38   | 0.48   | 0.31   | 0.19   |
 | 15    | GPT-5.2                         | **0.58**   | **0.66**   | **0.54**   | **0.37**   |
 
-## Transformers text-to-gloss translation comparison (BLEU, evaluate hugging face)
-=======
-## Experimental results for “spoken-language text-gloss sequence” translation task using transformer models
->>>>>>> ac6be3e686da96376e416397312350151b7d1f38
+## Experimental results for ``spoken-language text-gloss sequence`` translation task using transformer models (BLEU, evaluate hugging face)
 
 | Rank | Model                            | BLEU     | Epochs | Steps | train_runtime | samples/sec | steps/sec | train_loss (last) |
 |------|----------------------------------|----------|--------|-------|---------------|-------------|-----------|-------------------|
@@ -63,7 +55,7 @@ This work is devoted to a method of automatic machine translation of texts into 
 | 3    | facebook/mbart-large-50          | 0.83     | 250    | 2500  | 5039.09 s     | 3.97        | 0.50      | 0.2716            |
 | 4    | mT5-small                        | **0.84** | 1000   | 10000 | 5442.78 s     | 14.70       | 1.84      | 0.7575            |
 
-## Transformers text-to-gloss translation comparison (BLEU, NLTK N-grams)
+## Experimental results for ``spoken-language text-gloss sequence`` translation task using transformer models (BLEU, NLTK N-grams)
 
 | Rank | Model                          | BLEU-1 | BLEU-2 | BLEU-3 | BLEU-4 |
 |-------|----------------------------------|--------|--------|--------|--------|
