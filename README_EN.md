@@ -6,7 +6,7 @@ This work is devoted to a method of automatic machine translation of texts into 
 
 <img width="1092" height="772" alt="Functional method text-to-gloss EN drawio (1)" src="https://github.com/user-attachments/assets/24c49270-6f5b-44c6-979b-1c384a432bd3" />
 
-## LLM text-to-gloss translation comparison (BLEU)
+## LLM text-to-gloss translation comparison (BLEU, evaluate hugging face)
 
 | Rank | Model                              | Tokens  | BLEU   |
 |------|-------------------------------------|----------|--------|
@@ -26,7 +26,27 @@ This work is devoted to a method of automatic machine translation of texts into 
 | 14    | deepseek-ai/DeepSeek-V3-0324        | 20 582   | 0.39   |
 | 15    | openai/gpt-5.2                      | 27 238   | **0.60** |
 
-## Transformers text-to-gloss translation comparison
+## LLM text-to-gloss translation comparison (BLEU, NLTK N-grams)
+
+| Rank | Model                              | BLEU-1 | BLEU-2 | BLEU-3 | BLEU-4 |
+|-------|--------------------------------------|--------|--------|--------|--------|
+| 1     | Olmo-3.1-32B-Instruct           | 0.06   | 0.15   | 0.05   | 0.00   |
+| 2     | Gpt-oss-120B                    | 0.11   | 0.18   | 0.08   | 0.02   |
+| 3     | Llama-3.3-70B-Instruct          | 0.12   | 0.21   | 0.08   | 0.03   |
+| 4     | Llama-3.1-8B-Instruct           | 0.15   | 0.21   | 0.10   | 0.06   |
+| 5     | GigaChat                        | 0.23   | 0.31   | 0.18   | 0.09   |
+| 6     | GigaChat-2                      | 0.24   | 0.32   | 0.19   | 0.09   |
+| 7     | YandexGPT-5-Lite-8B-instruct    | 0.26   | 0.35   | 0.20   | 0.11   |
+| 8     | GigaChat-2-Pro                  | 0.26   | 0.36   | 0.20   | 0.10   |
+| 9     | Qwen3-32B                       | 0.26   | 0.37   | 0.20   | 0.10   |
+| 10    | GigaChat-2-Max                  | 0.32   | 0.43   | 0.27   | 0.13   |
+| 11    | Алиса AI                        | 0.33   | 0.42   | 0.29   | 0.16   |
+| 12    | Command-a-reasoning-08-2025     | 0.35   | 0.46   | 0.29   | 0.16   |
+| 13    | Gemma-3-27B-It                  | 0.36   | 0.47   | 0.31   | 0.16   |
+| 14    | DeepSeek-V3-0324                | 0.38   | 0.48   | 0.31   | 0.19   |
+| 15    | GPT-5.2                         | **0.58**   | **0.66**   | **0.54**   | **0.37**   |
+
+## Transformers text-to-gloss translation comparison (BLEU, evaluate hugging face)
 
 | Rank | Model                                      | BLEU   | Epochs   | Steps  | train_runtime | samples/sec | steps/sec | train_loss (last) |
 |-------|---------------------------------------------|--------|--------|--------|---------------|-------------|-----------|------------------------|
@@ -34,5 +54,14 @@ This work is devoted to a method of automatic machine translation of texts into 
 | 2     | facebook/nllb-200-distilled-600M            | 0.83 | 250    | 2500   | 4880.46 s     | 4.10        | 0.51      | 1.0352                 |
 | 3     | facebook/mbart-large-50                     | 0.83 | 250    | 2500   | 5039.09 s     | 3.97        | 0.50      | 0.2716                 |
 | 4     | mT5-small                                   | **0.84** | 1000   | 10000  | 5442.78 s     | 14.70       | 1.84      | 0.7575                 |
+
+## Transformers text-to-gloss translation comparison (BLEU, NLTK N-grams)
+
+| Rank | Model                          | BLEU-1 | BLEU-2 | BLEU-3 | BLEU-4 |
+|-------|----------------------------------|--------|--------|--------|--------|
+| 1     | opus-mt-ru-en            | 0.66   | 0.71   | 0.65   | 0.50   |
+| 2     | mbart-large-50           | 0.76   | 0.81   | **0.77**   | 0.64   |
+| 3     | mT5-small                | **0.77**   | 0.80   | 0.76   | **0.65**   |
+| 4     | nllb-200-distilled-600M      | **0.77**   | **0.82**   | 0.76   | 0.62   |
 
 Based on the data obtained, the Slovo corpus glosses were marked up. Part of the results is presented in this file [link](corpora/parallel_corpus.csv) (4340/20400). The full parallel corpus can be provided upon request.
